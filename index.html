@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rivew Form</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <!-- ========== Form View ========== -->
+       <main id="formView" class="page">
+            <nav class="breadcrumb">
+                  Home <span>/</span> Shop <span>/</span> Product Details
+            </nav>
+           <div class="container">
+            
+
+            <section class="review-form-wrap">
+                  <div class="product-head">
+                        <img src="image/ring.png" alt="">
+                        <h1 class="product-title">WHITE SAPPHIRE TENNIS BRACELET</h1>
+                  </div>
+
+                  <form id="reviewForm" class="review-form" novalidate>
+
+                        <label class="field">
+                              <input name="reviewTitle" type="text" placeholder="Review Title" required maxlength="80">
+                              <small class="error"></small>
+                        </label>
+
+                        <label class="field">
+                              <textarea name="rivewDescription"  placeholder="Review Description" required minlength="10"></textarea>
+                              <small class="error"></small>
+                        </label>
+
+
+                        <!-- Upload/dropzone -->
+
+                        <div class="dropzone field" id="dropzone">
+                            <input id="fileInput" name="files" type="file" accept=".jpg,.jpeg,.png,.pdf" hidden multiple>
+                            <div class="dropzone-inner">
+                              <div class="cloud" aria-hidden="true">☁️</div>
+                              <p>
+                                 Drag and drop, or <button type="button" id="browseBtn" class="link-btn">browse</button> your files   
+                              </p>
+                              <small class="muted">Support JPG, PDF, PNG</small>
+                              <div id="fileList" class="file-list"></div>
+                            </div>  
+                        </div>
+
+                        <h2 class="section-title">Your Profile</h2>
+
+                        <div class="social-row">
+                              <button type="button" class="social-btn fb">
+                                    <span class="dot">f</span>Continew with Facebook
+                              </button>
+                              <button type="button" class="social-btn gg">
+                                    <span class="dot">g</span>Continew with Google
+                              </button>
+                        </div>
+
+                        <label class="field">
+                              <input name="name" type="text" placeholder="Name" required minlength="2">
+                              <small class="error"></small>
+                        </label>
+
+                        <label class="field">
+                              <input name="email" type="email" placeholder="Email Adderess" required>
+                              <small class="error"></small>
+                        </label>
+
+                        <div class="age-block">
+                              <div class="age-title">Age Range(Optional)</div>
+                              <div class="age-sub muted">Chose one</div>
+
+                              <div class="chips" id="ageChips">
+                                    <button type="button" class="chip" data-age="Under 18">Under 18</button>
+                                    <button type="button" class="chip" data-age="18 - 24">18 - 24</button>
+                                    <button type="button" class="chip" data-age="25 - 34">25 - 34</button>
+                                    <button type="button" class="chip" data-age="35 - 45">35 - 44</button>
+                                    <button type="button" class="chip" data-age="45 - 54">45 - 54</button>
+                                    <button type="button" class="chip" data-age="55 - 64">55 - 64</button>
+                                    <button type="button" class="chip" data-age="65+">65+</button>
+                              </div>
+                              <input type="hidden" name="ageRange" id="ageRange">
+                        </div>
+
+                        <p>
+                          By continuing you agree to JOURIE’S Terms and Conditions
+                        </p>
+
+                        <div class="actions-center">
+                              <button type="button" class="submit-btn"> Agree &amp; Submit</button>
+                        </div>
+                  </form>
+            </section>
+           </div> 
+       </main>
+
+
+      
+
+      <script src="main.js"></script>
+</body>
+</html>
