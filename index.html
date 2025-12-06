@@ -98,6 +98,49 @@
            </div> 
        </main>
 
+       <!-- Reviews View -->
+
+       <main class="page hidden" id="reviewsView">
+            <div class="container wide">
+
+
+                  <header class="reviews-head">
+                        <div class="avg">
+                              <span id="avgScore" class="avg-score">4.9</span>
+                              <div class="avg-stars" id="avgStars" aria-label="average rating"></div>
+                        </div>
+
+                        <div class="filters">
+                              <select class="filter" id="ratingFilter">
+                                    <option value="all">Rating</option>
+                                    <option value="all">5 star</option>
+                                    <option value="all">4 star</option>
+                                    <option value="all">3 star</option>
+                                    <option value="all">2 star</option>
+                                    <option value="all">1 star</option>
+                              </select>
+
+                              <select class="filter" id="ageFilter">
+                                    <option value="all">Age</option>
+                                    <option value="Under 18">Under 18</option>
+                                    <option value="18 - 24">18 - 24</option>
+                                    <option value="25 - 34">25 - 34</option>
+                                    <option value="35 - 44">35 - 44</option>
+                                    <option value="45 - 54">45 - 54</option>
+                                    <option value="55 - 64">55 - 64</option>
+                                    <option value="65+">65+</option>
+                              </select>
+                        </div>
+                  </header>
+
+                  <section class="review-list" id="reviewList"></section>
+
+                  <div class="back-row">
+                        <button id="backForm" class="ghost-btn" type="button">Back to form</button>
+                  </div>
+            </div>
+       </main>
+
 
       
 
