@@ -190,6 +190,7 @@ body{
 
 
 .social-btn {
+      font-family: tahoma;
       border: 1px solid var(--line);
       background: var(--panel-2);
       border-radius: 6px;
