@@ -104,11 +104,18 @@ body{
 
 .field input{
       resize: vertical;
-      min-height:64px;
+      min-height:50px;
 }
 .field input::placeholder,
 .field textarea::placeholder{
       color: #6f665b;
+      font-family: tahoma;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 14px;
+      line-height: 160%;
+      letter-spacing: 0px;
+
 }
 
 .error{
@@ -169,7 +176,7 @@ body{
       margin-top: 6px;
       margin-bottom: 2px;
       font-weight: 600;
-      font-family: Poppins;
+      font-family: tahoma;
 
 }
 
@@ -219,4 +226,89 @@ body{
       background: #fff;
       color: #ea4335;
       border: 1px solid var(--line);
+}
+
+.age-block{
+      margin-top: 4px;
+}
+
+.age-title{
+      font-size: 12px;
+      margin-bottom: 2px;
+}
+
+.age-sub{
+      font-size: 11px;
+      margin-bottom: 8px;
+}
+
+.chips{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+}
+
+.chip{
+      font-size: 11px;
+      padding: 9px 16px;
+      border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
+      background: var(--panel-2);
+      cursor: pointer;
+      border: 1px solid var(--line);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chip.active{
+      border-color: var(--accent);
+      font-size: 11px;
+      color: #661415;
+}
+
+.terms{
+      text-align: center;
+      font-size: 11px;
+      margin-top: 4px;
+}
+
+.actions-center{
+      display: flex;
+      justify-content: center;
+      margin-top: 2px;
+}
+
+.submit-btn{
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      padding: 12px 20px;
+      font-size: 12px;
+      cursor: pointer;
+}
+
+.age-title {
+    font-family: tahoma;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0px;
+}
+
+.age-sub.muted {
+      font-family: tahoma;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.5%;
+
 }
